@@ -4,7 +4,8 @@ const form = document.querySelector('form')
 //run hoti or empty values yaha a jati
 // but we want ki form submit hone par hum value le islia humne neeche likha
 form.addEventListener('submit',function(e){
-    e.preventDefault()
+    e.preventDefault()     //form 2 type se submit hota he post or get, to jese hi submit hota he uski values url me ya to server ke pas pahuch jati he 
+                           // hme use server pe pahuchne se rokna he, means hum form ke default action ko rok rahe he thats why we use preventDefault()
 
     const height = parseInt(document.querySelector('#height').value)
     const weight = parseInt(document.querySelector('#weight').value)
